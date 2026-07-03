@@ -1,0 +1,38 @@
+                PDF
+                 │
+                 ▼
+        Document Loader
+                 │
+                 ▼
+          Chunking
+                 │
+     ┌───────────┴───────────┐
+     ▼           ▼           ▼
+  Chunk 1     Chunk 2     Chunk 3
+     │           │           │
+     ▼           ▼           ▼
+      Embedding Model (e.g., HuggingFace)
+     │           │           │
+     ▼           ▼           ▼
+ Vector 1     Vector 2     Vector 3
+          │
+          ▼
+      Vector Database (FAISS/Chroma)
+          │
+          ▼
+      User Question
+          │
+          ▼
+   Question Embedding
+          │
+          ▼
+ Similarity Search
+          │
+          ▼
+  Most Relevant Chunks
+          │
+          ▼
+     LLM (Mistral/GPT)
+          │
+          ▼
+      Final Answer

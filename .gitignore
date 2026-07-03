@@ -1,0 +1,7 @@
+.env
+.venv
+.streamlit
+text.py
+notes.txt
+git-cheat-sheet-education.pdf
+main.py
